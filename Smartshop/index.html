@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smartshop</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-top">
+        <div style="display: flex; justify-content: center; align-items: center;">
+          <img src="./social.png" alt="" style="height: 30px" />
+
+          <div>
+            <h3 style="color: white">Smart Store</h1>
+          </div>
+        </div>
+        <button id="favorites-btn" class="favorites-btn">
+          ♡ Favorites
+        </button>
+      </div>
+
+      <div class="search-container">
+        <form id="search-form">
+          <input
+            type="text"
+            id="search-input"
+            class="search-input"
+            placeholder="Search character name..."
+            
+          />
+          <button type="submit" class="search-button">Search</button>
+        </form>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <!-- LEFT: MAIN DATA -->
+      <section class="products-section">
+        <p id="message"></p>
+
+        <h2>Products</h2>
+
+        <div id="products-container" class="grid-container"></div>
+      </section>
+
+      <aside class="favorites-section">
+        <h2>Your Favorites</h2>
+
+        <div id="favorites-container"></div>
+      </aside>
+    </main>
+    <script src="./script.js" defer></script>
+  </body>
+</html>
